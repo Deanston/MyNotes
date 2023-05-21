@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextHeader_h1">
+        <item name="android:fontFamily">@font/red_hat_display</item>
+        <item name="android:textSize">96sp</item>
+        <item name="android:textColor">#120E21</item>
+    </style>
+
+    <style name="TextHeader_h2">
+        <item name="android:fontFamily">@font/red_hat_display</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#120E21</item>
+    </style>
+
+    <style name="TextHeader_h3">
+        <item name="android:fontFamily">@font/public_sans</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#120E21</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:backgroundTint">#FBEEFF</item>
+        <item name="android:fontFamily">@font/public_sans</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:backgroundTint">#9378FF</item>
+        <item name="android:fontFamily">@font/public_sans</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>
