@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">My Notes</string>
+    <string name="spiice">Spiice</string>
+    <string name="discover_the_platform">Discover the platform</string>
+    <string name="you_have_an_account_log_in">You have an account? log in</string>
+    <string name="find_projects_from_companies_everywhere_in_the_world">Find projects from companies everywhere in the world</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="sign_up">Sign up</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="last_name">Last name</string>
+    <string name="first_name">First name</string>
+    <string name="log_in">Log in</string>
+    <string name="return_to_sign_up">Return to Sign-up</string>
 </resources>
