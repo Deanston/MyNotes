@@ -13,19 +13,25 @@
         android:theme="@style/Theme.MyNotes"
         tools:targetApi="31">
         <activity
-            android:name=".LogInActivity"
+            android:name=".OnboardingScreens.OnboardingScreen2"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".OnboardingScreens.OnboardingScreen1"
             android:exported="false" />
         <activity
-            android:name=".OnboardingActivity"
+            android:name=".OnboardingScreens.OnboardingScreen"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.LogInFragment"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".ui.SignUpFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ui.OnboardingFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

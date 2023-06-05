@@ -7,16 +7,42 @@
         <item name="android:textColor">#120E21</item>
     </style>
 
-    <style name="TextHeader_h2">
+    <style name="TextHeader_h3">
         <item name="android:fontFamily">@font/red_hat_display</item>
         <item name="android:textSize">32sp</item>
         <item name="android:textColor">#120E21</item>
     </style>
 
-    <style name="TextHeader_h3">
+    <style name="TextHeader_h4">
         <item name="android:fontFamily">@font/public_sans</item>
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">#120E21</item>
+    </style>
+
+    <style name="TextHeader_h2_bold">
+        <item name="android:fontFamily">@font/red_hat_display</item>
+        <item name="android:textSize">52sp</item>
+        <item name="android:textColor">#120E21</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextHeader_h3_bold">
+        <item name="android:fontFamily">@font/red_hat_display</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#120E21</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextHeader_h3_transparent">
+        <item name="android:fontFamily">@font/public_sans</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#99120E21</item>
+    </style>
+
+    <style name="TextHeader_h4_transparent">
+        <item name="android:fontFamily">@font/public_sans</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#99120E21</item>
     </style>
 
     <style name="EditTextStyle">
