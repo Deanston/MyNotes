@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bubbles_onboarding_1"
-    tools:context=".ui.OnboardingFragment">
+    tools:context=".ui.onboardingscreens.OnboardingFragment">
 
     <TextView
         android:id="@+id/textViewOnboarding1"
@@ -46,7 +46,7 @@
         android:layout_height="58dp"
         android:layout_marginTop="30dp"
         android:gravity="center"
-        android:text="@string/enjoy_your_progess"
+        android:text="@string/enjoy_your_progress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ImageNotes" />

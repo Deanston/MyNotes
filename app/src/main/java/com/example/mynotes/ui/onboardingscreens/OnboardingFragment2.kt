@@ -1,4 +1,4 @@
-package com.example.mynotes.OnboardingScreens
+package com.example.mynotes.ui.onboardingscreens
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,19 +6,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.mynotes.R
-import com.example.mynotes.ui.SignUpFragment
-import com.example.mynotes.databinding.FragmentOnboardingscreenBinding
+import com.example.mynotes.ui.signup.SignUpFragment
+import com.example.mynotes.databinding.FragmentOnboardingscreen1Binding
 
-class OnboardingScreen : Fragment() {
+class OnboardingFragment2 : Fragment() {
 
-    private var binding: FragmentOnboardingscreenBinding? = null
+    private var binding: FragmentOnboardingscreen1Binding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentOnboardingscreenBinding.inflate(inflater, container, false)
+        binding = FragmentOnboardingscreen1Binding.inflate(inflater, container, false)
         return binding?.root
     }
 

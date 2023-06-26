@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bubbles_sign_up"
     android:orientation="vertical"
-    tools:context=".ui.SignUpFragment">
+    tools:context=".ui.signup.SignUpFragment">
 
     <TextView
         style="@style/TextHeader_h3"
@@ -80,7 +80,8 @@
         android:enabled="true"
         android:hint="@string/password"
         app:boxStrokeColor="#FBEEFF"
-        app:boxStrokeWidth="2dp">
+        app:boxStrokeWidth="2dp"
+        app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
             style="@style/EditTextStyle"

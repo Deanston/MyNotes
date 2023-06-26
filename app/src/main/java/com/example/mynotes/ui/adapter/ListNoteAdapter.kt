@@ -1,11 +1,10 @@
-package com.example.mynotes.adapter
+package com.example.mynotes.ui.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import com.example.mynotes.R
+import com.example.mynotes.databinding.NoteItemBinding
 import com.example.mynotes.model.Note
 
 
@@ -23,12 +22,9 @@ class ListNoteAdapter : ListAdapter<Note, NoteViewHolder>(
 ) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
-
-        val layoutInflater: LayoutInflater = LayoutInflater.from(parent.context)
-        val view: View = layoutInflater.inflate(R.layout.note_item, parent, false)
-
-        return NoteViewHolder(view)
-
+        return NoteViewHolder(
+            NoteItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        )
     }
 
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {

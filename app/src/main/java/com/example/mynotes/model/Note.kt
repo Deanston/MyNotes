@@ -1,11 +1,9 @@
 package com.example.mynotes.model
 
-import android.os.Parcelable
-import kotlinx.parcelize.Parcelize
+import java.util.Date
 
-@Parcelize
-data class Note(
+data class  Note(
     val title: String?,
-    val message: String,
-    val date: String
-) : Parcelable
+    val message: String?,
+    val date: Date?
+)

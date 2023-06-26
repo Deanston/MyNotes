@@ -1,31 +1,21 @@
 package com.example.mynotes.db
 
-import com.example.mynotes.model.Subscriber
+import android.content.Context
+import androidx.room.Room
 import com.example.mynotes.model.Note
 
 object NoteDataBase {
-    private val listSubscribers = arrayListOf<Subscriber>()
 
-    private val list = arrayListOf<Note>()
+    var noteDao: NoteDao? = null
 
-    fun addNote(note: Note) {
-        list.add(note)
-        notifySubscribers()
+    private var noteDataBase: AppDataBase? = null
+    fun initNDB(context: Context) {
+        val noteDataBase = Room.databaseBuilder(context, AppDataBase::class.java, "note-data-base")
+            .allowMainThreadQueries()
+            .build()
+        noteDao = noteDataBase.getNoteDao()
     }
 
-    fun getListNotes() = list
+    val listNote = arrayListOf<Note>()
 
-    fun subscribe(s: Subscriber) {
-        listSubscribers.add(s)
-    }
-
-    fun unsubscribe(s: Subscriber) {
-        listSubscribers.remove(s)
-    }
-
-    fun notifySubscribers() {
-        listSubscribers.forEach {
-            it.update()
-        }
-    }
 }

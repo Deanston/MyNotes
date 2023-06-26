@@ -1,4 +1,4 @@
-package com.example.mynotes.ui
+package com.example.mynotes.ui.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

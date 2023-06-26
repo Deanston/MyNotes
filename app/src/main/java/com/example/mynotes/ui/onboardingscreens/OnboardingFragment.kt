@@ -1,19 +1,11 @@
-package com.example.mynotes.ui
+package com.example.mynotes.ui.onboardingscreens
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.viewpager2.widget.ViewPager2
-import com.example.mynotes.OnboardingScreens.OnboardingScreen
-import com.example.mynotes.OnboardingScreens.OnboardingScreen1
-import com.example.mynotes.OnboardingScreens.OnboardingScreen2
-import com.example.mynotes.OnboardingScreens.VpAdapter
-import com.example.mynotes.R
 import com.example.mynotes.databinding.FragmentOnboardingBinding
-import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
-
 
 class OnboardingFragment : Fragment() {
     private var binding: FragmentOnboardingBinding? = null
@@ -31,20 +23,22 @@ class OnboardingFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        val fragmentList = arrayListOf<Fragment>(
-            OnboardingScreen(),
-            OnboardingScreen1(),
-            OnboardingScreen2()
+        val fragmentList = arrayListOf(
+            OnboardingFragment1(),
+            OnboardingFragment2(),
+            OnboardingFragment3()
         )
         val adapter = VpAdapter(
             fragmentList,
             requireActivity().supportFragmentManager,
             lifecycle
         )
-        val viewPager = view.findViewById<ViewPager2>(R.id.vp2)
+        val viewPager = binding?.vp2
         viewPager?.adapter = adapter
-        val indicator = view.findViewById<WormDotsIndicator>(R.id.worm_dots_indicator)
+        val indicator = binding?.wormDotsIndicator
 
-        indicator.attachTo(viewPager)
+        if (viewPager != null) {
+            indicator?.attachTo(viewPager)
+        }
     }
 }

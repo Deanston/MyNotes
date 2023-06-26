@@ -1,4 +1,4 @@
-package com.example.mynotes.OnboardingScreens
+package com.example.mynotes.ui.onboardingscreens
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

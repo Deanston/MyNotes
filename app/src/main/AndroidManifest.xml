@@ -4,6 +4,7 @@
 
     <application
         android:allowBackup="true"
+        android:name=".App"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher_planet_round"
@@ -12,24 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyNotes"
         tools:targetApi="31">
-        <activity
-            android:name=".OnboardingScreens.OnboardingScreen2"
-            android:exported="false" />
-        <activity
-            android:name=".OnboardingScreens.OnboardingScreen1"
-            android:exported="false" />
-        <activity
-            android:name=".OnboardingScreens.OnboardingScreen"
-            android:exported="false" />
-        <activity
-            android:name=".ui.LogInFragment"
-            android:exported="false" />
-        <activity
-            android:name=".ui.SignUpFragment"
-            android:exported="false" />
-        <activity
-            android:name=".ui.OnboardingFragment"
-            android:exported="false" />
         <activity
             android:name=".ui.MainActivity"
             android:exported="true">

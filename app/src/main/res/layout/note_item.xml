@@ -36,7 +36,7 @@
     <TextView
         android:id="@+id/noteItemDate"
         android:layout_width="72dp"
-        android:layout_height="20dp"
+        android:layout_height="30dp"
         android:layout_marginEnd="20dp"
         android:fontFamily="@font/public_sans"
         android:textColor="#99879D"
