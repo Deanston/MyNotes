@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bubbles_log_in"
+    android:orientation="vertical"
+    tools:context=".ui.LogInFragment">
+
+    <TextView
+        style="@style/TextHeader_h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:text="@string/log_in" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/log_in_email"
+        style="?attr/textInputFilledStyle"
+        android:layout_width="296dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:enabled="true"
+        android:hint="@string/email"
+        app:boxStrokeColor="#FBEEFF"
+        app:boxStrokeWidth="2dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/log_in_password"
+        style="?attr/textInputFilledStyle"
+        android:layout_width="296dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:enabled="true"
+        android:hint="@string/password"
+        app:boxStrokeColor="#FBEEFF"
+        app:boxStrokeWidth="2dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/LogInButton"
+        style="@style/ButtonStyle"
+        android:layout_width="263dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="230dp"
+        android:text="@string/log_in" />
+
+    <TextView
+        android:id="@+id/ReturnSignUpText"
+        style="@style/TextHeader_h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/return_to_sign_up" />
+
+</LinearLayout>

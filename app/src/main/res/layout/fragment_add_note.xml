@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddNoteFragment">
+
+    <TextView
+        android:id="@+id/addNotesBack"
+        style="@style/TextHeader_h4_transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="28dp"
+        android:drawablePadding="6dp"
+        android:text="@string/back"
+        app:drawableStartCompat="@drawable/ic_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextHeader_h3_transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/add_note"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addNoteTitle"
+        style="?attr/textInputFilledStyle"
+        android:layout_width="340dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="80dp"
+        android:enabled="true"
+        android:hint="@string/title"
+        app:boxStrokeColor="#FBEEFF"
+        app:boxStrokeWidth="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addNoteTitleText"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addNoteMessage"
+        style="?attr/textInputFilledStyle"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:enabled="true"
+        android:hint="@string/message"
+        app:boxStrokeColor="#FBEEFF"
+        app:boxStrokeWidth="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addNoteTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addNoteMessageText"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:lines = "20" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addNoteButton"
+        style="@style/ButtonStyle"
+        android:layout_width="264dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="160dp"
+        android:text="@string/add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addNoteMessage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
